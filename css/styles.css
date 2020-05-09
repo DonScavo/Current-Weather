@@ -88,3 +88,10 @@ p {
     text-align: center;
 }
 
+.box_resultado h2 {
+    margin-bottom: 1.5vw;
+}
+
+.alert {
+    margin-bottom: 1vw;
+}
