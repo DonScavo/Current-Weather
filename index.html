@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="box">
+                <div class="titulo">
+                    <h1>¿Quieres saber cómo está el clima en tu ciudad?</h1>
+                    <img class="rain" src="img/storm.png" alt="Icono_clima">
+
+                </div>
+                <div class="arrow_box">
+                    <p>Averigualo aquí</p>
+                    <img class="arrow" src="img/arrows.png" alt="icono_arrow">
+                </div>
+                <div class="buscador_box">
+                    <form id="formBuscador" action="#">
+                        <input id="buscador" class="buscador" type="text" placeholder="ciudad">
+                        <input id="search" class="submit" type="submit" value="search">
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="box_resultado">
+                <h2>Resultado</h2>
+
+                <div id="resultado">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
