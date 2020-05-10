@@ -7,7 +7,7 @@
             data: {
                 labels: ['Temperatura Min', 'Temperatura Max'],
                 datasets: [{
-                    label: 'Grafica de temp min & max en la ciudad',
+                    label: 'Gráfica de temp min & max en la ciudad',
                     data: chartData,
                     backgroundColor: [
                         'rgba(252, 191, 30, 1)',

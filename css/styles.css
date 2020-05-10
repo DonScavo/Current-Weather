@@ -3,8 +3,6 @@ body {
     background-color: #120136;
 }
 
-.main {}
-
 h1,
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -31,23 +29,21 @@ p {
 }
 
 .titulo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .rain {
     width: 6vw;
+    margin: 2vw 0;
 }
 
 .arrow_box {
     text-align: center;
-    margin-top: 2.5vw;
 }
 
 .arrow {
-    width: 3vw;
-    margin: 1vw 0;
+    width: 4vw;
+    margin: 2vw 0;
 }
 
 .buscador_box {
@@ -58,28 +54,32 @@ p {
     font-family: 'Roboto', sans-serif;
     color: #120136;
     font-size: 1.5vw;
-    margin: 0;
+    font-weight: bold;
+    margin: 0 0 0 1vw;
     background-color: #ffffff;
     border: 0;
     cursor: pointer;
+    border-radius: 25px;
+    padding: .3vw 1vw;
 }
 
 .submit:hover {
     background-color: #fcbf1e;
     color: #120136;
-    transition: ease-in-out 1s;
+    transition: ease-in-out .8s;
 }
-
 
 .buscador {
     font-family: 'Roboto', sans-serif;
-    color: #120136;
+    font-weight: bold;
     font-size: 1.5vw;
+    color: #120136;
     margin: 0;
     background-color: #ffffff;
     border: 0;
+    border-radius: 25px;
+    padding: .7vw;
 }
-
 
 .box_resultado {
     width: 50vw;
@@ -94,4 +94,60 @@ p {
 
 .alert {
     margin-bottom: 1vw;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    h1,
+    h2 {
+        font-size: 7vw;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+
+    .box {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 5vw;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscador {
+        font-size: 5vw;
+        padding: 2vw 2vw;
+        text-align: center;
+    }
+
+    .submit {
+        font-size: 5vw;
+        margin: 3vw 0 0 0;
+        padding: 1vw 4vw;
+    }
+
+    .box_resultado {
+        width: 100vw;
+        max-width: 100vw;
+        padding: 5vw;
+    }
+
+    .rain {
+        width: 25vw;
+        margin: 5vw 0;
+    }
+
+    .arrow {
+        width: 15vw;
+        margin: 5vw 0;
+    }
 }

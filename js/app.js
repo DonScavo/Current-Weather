@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
     async function consultarAPI(city) {
         const url = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=308bbc0e3827c70548c75bf344117eb5&lang=sp&units=metric`);
         if (url.status === 404) {
-            alert.textContent = "Esa ciudad no existe (que yo sepa), ¡intenta con otra!";
+            alert.textContent = "Según nuestros registros no existe una ciudad con ese nombre, ¡intenta con otra!";
             setTimeout(() => {
                 alert.textContent = "";
             }, 3000)
@@ -35,7 +35,8 @@ window.addEventListener('load', () => {
     };
 
     function draw(data) {
-        resultado.innerHTML = `<p>  Ciudad: ${data.name} <br>
+        resultado.innerHTML = `<p>  País: ${data.sys.country} <br>
+                                    Ciudad: ${data.name} <br>
                                     Estado: ${data.weather[0].description} <br>
                                     Temperatura: ${data.main.temp}°C <br>
                                     Sensación termica: ${data.main.feels_like}°C <br>
