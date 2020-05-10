@@ -112,7 +112,7 @@ p {
     }
 
     .box {
-        width: 100vw;
+        width: 90vw;
         max-width: 100vw;
         padding: 5vw;
     }
@@ -136,7 +136,7 @@ p {
     }
 
     .box_resultado {
-        width: 100vw;
+        width: 90vw;
         max-width: 100vw;
         padding: 5vw;
     }
